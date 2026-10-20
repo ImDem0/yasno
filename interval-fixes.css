@@ -1,0 +1,70 @@
+/* Overrides for Interval */
+body, button, input, select, textarea {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+h1, h2, h3, .brand, .price, .faq-item button, .btn {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 700 !important;
+}
+.course-row, .list-row {
+  display: grid !important;
+  grid-template-columns: 120px 1fr auto !important;
+  gap: 16px !important;
+  align-items: center !important;
+  padding: 18px 20px !important;
+  margin-bottom: 12px !important;
+  border: none !important;
+  border-radius: 16px !important;
+  width: 100% !important;
+  background: var(--card) !important;
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--ink) 6%, transparent),
+    0 8px 24px color-mix(in srgb, var(--ink) 4%, transparent) !important;
+  text-align: left !important;
+  transition: transform 160ms ease, box-shadow 160ms ease !important;
+}
+.course-row:hover, .list-row:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 2px 0 color-mix(in srgb, var(--ink) 8%, transparent),
+    0 14px 32px color-mix(in srgb, var(--ink) 8%, transparent) !important;
+  background: var(--card) !important;
+}
+.band {
+  display: grid !important;
+  grid-template-columns: minmax(160px, 220px) 1fr !important;
+  gap: 28px 40px !important;
+  align-items: start !important;
+  border-top: 1px solid color-mix(in srgb, var(--line) 70%, transparent) !important;
+}
+.band h2 {
+  max-width: 12ch !important;
+  margin: 0 !important;
+  line-height: 1.25 !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+.band > div { min-width: 0 !important; }
+.band p { margin: 0 0 14px !important; max-width: 62ch !important; }
+.quiz-card, .article, .faq-item, .modal-card, .buy {
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--ink) 6%, transparent),
+    0 10px 28px color-mix(in srgb, var(--ink) 5%, transparent) !important;
+}
+.option {
+  border: none !important;
+  border-radius: 14px !important;
+  background: var(--bg-2) !important;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 8%, transparent) !important;
+  margin-top: 10px !important;
+  padding: 14px 16px !important;
+}
+.materials-list, .courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+@media (max-width: 860px) {
+  .band { grid-template-columns: 1fr !important; gap: 12px !important; }
+  .band h2 { max-width: none !important; }
+}
