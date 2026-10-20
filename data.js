@@ -1,6 +1,6 @@
 window.YASNO_DATA = {
-  brand: "Ясно",
-  slogan: "Киберграмотность без тумана и паники",
+  brand: "Интервал",
+  slogan: "Киберграмотность без страха и паники",
   courses: [
     {
       id: "osnova",
